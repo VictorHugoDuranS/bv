@@ -1,0 +1,79 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="danger">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="card-background-page">
+
+    <ion-card>
+      <img src="./assets/imgs/1.png">
+    </ion-card>
+
+    <ion-list>
+
+
+      <ion-item-divider color="danger">Inicio</ion-item-divider>
+      <ion-item (click)="openPage('home')" menuClose>
+        <ion-icon name="home" item-left large></ion-icon>
+        <h2>Inicio</h2>
+        <p>El bosque del ciclo Verde</p>
+      </ion-item>
+      <ion-item (click)="openPage('cart')" menuClose>
+        <ion-icon name="cart" item-left large></ion-icon>
+        <h2>Tu carrito</h2>
+        <p>Verifica tus articulos</p>
+      </ion-item>
+      <ion-item (click)="openPage('bosky')" menuClose>
+        <ion-icon name="chatbubbles" item-left large></ion-icon>
+        <h2>
+          Bosky "El Protector del Bosque"
+        </h2>
+        <p>
+          Chatea un rato con bosky
+        </p>
+      </ion-item>
+      <ion-item (click)="openPage('santa')" menuClose>
+        <ion-icon name="snow" item-left large></ion-icon>
+        <h2>
+          Realidad Aumentada
+        </h2>
+        <p>
+          Una experiencia nueva
+        </p>
+      </ion-item>
+      <ion-item (click)="openPage('mapa')" menuClose>
+        <ion-icon name="map" item-left large></ion-icon>
+        <h2>
+          Mapa del sitio
+        </h2>
+        <p>
+          Para no perderte
+        </p>
+      </ion-item>
+      <ion-item (click)="openPage('encuesta')" menuClose>
+        <ion-icon name="cube" item-left large></ion-icon>
+        <h2>
+          Encuesta de satisfacción
+        </h2>
+        <p>
+          Calificanos por favor!
+        </p>
+      </ion-item>
+      <ion-item-divider color="danger">Categorías</ion-item-divider>
+      <ion-item *ngFor="let category of categories" text-wrap (click)="openCategoryPage(category)" menuClose>
+          <ion-icon name="star"  item-left large></ion-icon>
+        <h2>
+          {{ category.name }}
+        </h2>
+        <p>
+          {{ category.description }}
+        </p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-menu> 
+
+<ion-nav #content [root]="homePage"></ion-nav>

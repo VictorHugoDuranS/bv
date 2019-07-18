@@ -1,0 +1,37 @@
+page-bosky3 {
+    .item-md div {
+        color: white;
+      }
+      .text-input {
+        text-indent: 0;
+        color: white;
+      }
+    
+      .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: white;
+      }
+    
+      .from {
+        background-color: #c21818;
+        color: white;
+        border: 2px solid #c21818;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+      }
+    
+      .to {
+        background-color: #fe9253;
+        color: white;
+        border: 2px solid #fe9253;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+      }
+    
+      .message {
+        white-space: pre-line!important;
+      }
+}
+ 

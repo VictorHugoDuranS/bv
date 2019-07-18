@@ -1,5 +1,13 @@
 {
   "name": "bv",
-  "integrations": {},
-  "type": "ionic-angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+  {
+    "path": "/api",
+    "proxyUrl": "https://mqv.biz/luisc/api"
+  }
+]
 }

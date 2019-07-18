@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://mqv.biz/luisc",
+        "secure":"false",
+        "chageOregin": "true"
+    }
+}
